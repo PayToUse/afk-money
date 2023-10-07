@@ -1,8 +1,9 @@
 function makeMoney() {
   // important variables
   var money = 0;
-  var display = document.querySelector(".odometer");
-  var revenue = (Math.floor(Math.random() * 10) + 1) + Math.random();
+  var display = document.querySelector("#money");
+  var display1 = document.querySelector("#rate")
+  var revenue = (Math.floor(Math.random() * 10) + 1) + (Math.random());
   
   // variables for saving
   var savedMoneyValue = localStorage.getItem('savedMoneyValue') || 0;
@@ -12,7 +13,7 @@ function makeMoney() {
   
   // odometer parameters
   display.innerHTML = newMoneyValue;
-  display.format = '(,ddd).dd';
+  display1.innerHTML = revenue;
   
   // variables for displaying the year
   const d = new Date();
