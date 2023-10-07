@@ -2,7 +2,7 @@ function makeMoney() {
   // important variables
   var money = 0;
   var display = document.querySelector(".odometer");
-  var revenue = Math.floor(Math.random() * 10) + 1;
+  var revenue = (Math.floor(Math.random() * 10) + 1) + Math.random();
   
   // variables for saving
   var savedMoneyValue = localStorage.getItem('savedMoneyValue') || 0;
